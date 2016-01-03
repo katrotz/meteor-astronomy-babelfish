@@ -79,5 +79,10 @@ Set the translations of a field. The fieldTranslations should be an object with 
 }
 ```
 
+## Notes
+1. Babelfish will consder the default locale the first locale in the list of locales defined using `Astro.setLocales`
+2. Babelfish will create the `translations` field on the document that will hold the translations for all multilingual fields for each locale. This field can not be directly manipulated. The translations can be set using the `model.translate` method.
+3. Babelfish will create a field on the document for each multilingual field, holding the translation for the default locale. This will allow using the field in other behaviours (eg. A multilingual field can be used to generate a slug using the astronomy slug behaviour)
+
 ## Licence
 [MIT Licence](http://opensource.org/licenses/MIT)

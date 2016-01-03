@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'katrotz:meteor-astronomy-babelfish',
+  name: 'katrotz:astronomy-babelfish',
   version: '0.0.1',
   summary: 'Translation module for meteor astronomy',
   git: 'git@github.com:katrotz/meteor-astronomy-babelfish.git',
