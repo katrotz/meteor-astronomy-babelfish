@@ -4,7 +4,7 @@
 
 ## Installation
 
-```meteor add katrotz:meteor-astronomy-babelfish```
+```meteor add katrotz:astronomy-babelfish```
 
 ## Introduction
 
