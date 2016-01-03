@@ -43,6 +43,7 @@ Feature = Astro.Class({
 
 ##Methods
 ### Global methods
+<<<<<<< HEAD
 #### Astro.setLocales(localesList)
 Set the list of locales valid values to be used (ISO 639-1 language names)
 
@@ -69,6 +70,34 @@ Get the list of fields registered as babel fields
 Set the translation of a field for a locale
 
 #### model.translate(fieldName, fieldTranslations)
+=======
+###### Astro.setLocales(localesList)
+Set the list of locales valid values to be used (ISO 639-1 language names)
+
+###### Astro.getLocales()
+Get the list of locales valid values
+
+###### Astro.useLocale(locale)
+Set the current locale
+
+###### Astro.currentLocale()
+Get the current locale
+
+### Model methods
+###### model.babelLocales()
+Shorthand for Astro.getLocales
+
+###### model.currentLocale()
+Shorthand for Astro.currentLocale
+
+###### model.babelFields()
+Get the list of fields registered as babel fields
+
+###### model.translate(fieldName, fieldTranslation, locale)
+Set the translation of a field for a locale
+
+###### model.translate(fieldName, fieldTranslations)
+>>>>>>> origin/master
 Set the translations of a field. The fieldTranslations should be an object with locales as keys, and translations as values
 ```
 {
