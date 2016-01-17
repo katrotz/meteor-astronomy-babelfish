@@ -1,15 +1,14 @@
 Package.describe({
   name: 'katrotz:astronomy-babelfish',
-  version: '0.0.1',
+  version: '0.0.3',
   summary: 'Translation module for meteor astronomy',
-  git: 'git@github.com:katrotz/meteor-astronomy-babelfish.git',
-  documentation: 'README.md'
+  git: 'https://github.com/katrotz/meteor-astronomy-babelfish'
 });
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
-  api.use('jagi:astronomy');
+  api.use('jagi:astronomy@1.2.10');
   api.addFiles('lib/modules/events/global.js');
   api.addFiles('lib/modules/events/before_init.js');
   api.addFiles('lib/modules/events/before_change.js');
@@ -26,6 +25,6 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('ecmascript');
   api.use('tinytest');
-  api.use('katrotz:meteor-astronomy-babelfish');
+  api.use('katrotz:astronomy-babelfish');
   api.addFiles('tests/meteor-astronomy-babelfish-tests.js');
 });
